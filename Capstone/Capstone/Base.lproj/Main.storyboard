@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KIi-GS-JTr">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Capstone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHOPPING WITH ME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2M-Ed-IGh">
+                                <rect key="frame" x="126" y="125.5" width="123" height="58"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpK-3e-2LG">
+                                <rect key="frame" x="140.5" y="483.5" width="94" height="36"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <state key="normal" title="LET'S GO !">
+                                    <color key="titleColor" red="0.052330933439849375" green="0.37598593555731219" blue="0.32546371587059908" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="csu-Ei-02g" kind="show" id="TZM-qA-Sb1"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoppingbag" translatesAutoresizingMaskIntoConstraints="NO" id="GLa-kt-aHz">
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="bHi-0p-ubK"/>
+                                    <constraint firstAttribute="width" constant="200" id="eYd-MV-36o"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgy-s2-XOp">
+                                <rect key="frame" x="116" y="529.5" width="143" height="36"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <state key="normal" title="INSTRUCTIONS">
+                                    <color key="titleColor" red="0.052330933439999998" green="0.37598593559999999" blue="0.32546371590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iJ3-rg-Elm" kind="show" id="Yb1-yX-Ccr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Rgy-s2-XOp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6E0-Ri-6iH"/>
+                            <constraint firstItem="b2M-Ed-IGh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7qw-qG-rHk"/>
+                            <constraint firstItem="GLa-kt-aHz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="83X-Es-BWI"/>
+                            <constraint firstItem="Rgy-s2-XOp" firstAttribute="top" secondItem="dpK-3e-2LG" secondAttribute="bottom" constant="10" id="deb-BH-48i"/>
+                            <constraint firstItem="GLa-kt-aHz" firstAttribute="top" secondItem="b2M-Ed-IGh" secondAttribute="bottom" constant="50" id="din-qw-EDL"/>
+                            <constraint firstItem="dpK-3e-2LG" firstAttribute="top" secondItem="GLa-kt-aHz" secondAttribute="bottom" constant="50" id="nan-3W-Oj5"/>
+                            <constraint firstItem="dpK-3e-2LG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vCA-vj-PmH"/>
+                            <constraint firstItem="GLa-kt-aHz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yLG-N4-vBo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cpJ-bZ-Rvm">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="JQp-G4-1lt"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="homepageImage" destination="GLa-kt-aHz" id="pRz-2r-nnD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1240.8" y="-118.29085457271366"/>
+        </scene>
+        <!--Barcode View Controller-->
+        <scene sceneID="Gw9-6O-EEm">
+            <objects>
+                <viewController storyboardIdentifier="BarcodeScanner" modalPresentationStyle="fullScreen" id="csu-Ei-02g" customClass="BarcodeViewController" customModule="Capstone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4So-dy-sK6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoppingbag" translatesAutoresizingMaskIntoConstraints="NO" id="OA2-hb-lG0">
+                                <rect key="frame" x="62.5" y="94" width="250" height="250"/>
+                                <color key="tintColor" red="0.052330933439999998" green="0.37598593559999999" blue="0.32546371590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Z03-tb-wEo"/>
+                                    <constraint firstAttribute="height" constant="250" id="wx8-61-sbY"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Barcode will show here" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hRo-4I-yDL">
+                                <rect key="frame" x="37.5" y="364" width="300" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="OEW-eu-sy8"/>
+                                    <constraint firstAttribute="height" constant="50" id="zWI-Rh-lE4"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ib-2K-Izp">
+                                <rect key="frame" x="137.5" y="464" width="100" height="36"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <state key="normal" title="Take Photo">
+                                    <color key="titleColor" red="0.052330933439999998" green="0.37598593559999999" blue="0.32546371590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="csu-Ei-02g" eventType="touchUpInside" id="Ttl-8w-BC0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aQ-Y2-w7U">
+                                <rect key="frame" x="126" y="510" width="123" height="36"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <state key="normal" title="Upload Image">
+                                    <color key="titleColor" red="0.052330933439999998" green="0.37598593559999999" blue="0.32546371590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadImage:" destination="csu-Ei-02g" eventType="touchUpInside" id="1gI-YL-MH0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pr3-qq-kVr">
+                                <rect key="frame" x="159.5" y="566" width="56" height="36"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <state key="normal" title="Next !"/>
+                                <connections>
+                                    <segue destination="GEU-vO-Ssg" kind="show" id="j4E-88-Bj6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHA-h4-eg8">
+                                <rect key="frame" x="50" y="576" width="275" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="naL-nT-SJZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hRo-4I-yDL" firstAttribute="top" secondItem="OA2-hb-lG0" secondAttribute="bottom" constant="20" id="3Zs-de-rbO"/>
+                            <constraint firstItem="4ib-2K-Izp" firstAttribute="top" secondItem="hRo-4I-yDL" secondAttribute="bottom" constant="50" id="FGw-2f-aND"/>
+                            <constraint firstItem="ob8-nt-f6R" firstAttribute="trailing" secondItem="ZHA-h4-eg8" secondAttribute="trailing" constant="50" id="Mux-bk-8bC"/>
+                            <constraint firstItem="ZHA-h4-eg8" firstAttribute="top" secondItem="4aQ-Y2-w7U" secondAttribute="bottom" constant="30" id="Nue-Qg-Dh3"/>
+                            <constraint firstItem="4aQ-Y2-w7U" firstAttribute="top" secondItem="4ib-2K-Izp" secondAttribute="bottom" constant="10" id="P5r-uv-W9F"/>
+                            <constraint firstItem="hRo-4I-yDL" firstAttribute="centerX" secondItem="4So-dy-sK6" secondAttribute="centerX" id="ZUy-h7-Vu0"/>
+                            <constraint firstItem="OA2-hb-lG0" firstAttribute="centerX" secondItem="4So-dy-sK6" secondAttribute="centerX" id="cnr-s3-T9g"/>
+                            <constraint firstItem="ZHA-h4-eg8" firstAttribute="leading" secondItem="ob8-nt-f6R" secondAttribute="leading" constant="50" id="fhj-kz-VcB"/>
+                            <constraint firstItem="4aQ-Y2-w7U" firstAttribute="centerX" secondItem="4So-dy-sK6" secondAttribute="centerX" id="jzr-oA-kOZ"/>
+                            <constraint firstItem="Pr3-qq-kVr" firstAttribute="top" secondItem="4aQ-Y2-w7U" secondAttribute="bottom" constant="20" id="moL-qF-Yf7"/>
+                            <constraint firstItem="4ib-2K-Izp" firstAttribute="centerX" secondItem="4So-dy-sK6" secondAttribute="centerX" id="niN-eV-kYJ"/>
+                            <constraint firstItem="OA2-hb-lG0" firstAttribute="top" secondItem="ob8-nt-f6R" secondAttribute="top" constant="50" id="rUc-pJ-Max"/>
+                            <constraint firstItem="Pr3-qq-kVr" firstAttribute="centerX" secondItem="4So-dy-sK6" secondAttribute="centerX" id="tIa-1t-U2f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ob8-nt-f6R"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6GK-o8-B1p"/>
+                    <connections>
+                        <outlet property="errorMessage" destination="ZHA-h4-eg8" id="Ax8-Rw-fX7"/>
+                        <outlet property="imageView" destination="OA2-hb-lG0" id="Uqm-Zy-OQV"/>
+                        <outlet property="nextButton" destination="Pr3-qq-kVr" id="z2B-y3-9FG"/>
+                        <outlet property="resultView" destination="hRo-4I-yDL" id="d2s-wN-eos"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nbu-Qc-uhy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2340" y="-558.17091454272872"/>
+        </scene>
+        <!--Picker View Controller-->
+        <scene sceneID="o9d-B0-K9g">
+            <objects>
+                <viewController storyboardIdentifier="Picker" id="GEU-vO-Ssg" customClass="PickerViewController" customModule="Capstone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9pe-mP-Q7V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Product name found by barcode lookup API" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ox3-gY-i4d">
+                                <rect key="frame" x="195" y="138" width="150" height="120"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="3w4-IY-T8b"/>
+                                    <constraint firstAttribute="width" constant="150" id="j7x-Sz-eXK"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="09V-vX-Ar3">
+                                <rect key="frame" x="30" y="118" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="5Ji-6W-NA1"/>
+                                    <constraint firstAttribute="width" constant="150" id="j32-VZ-mk4"/>
+                                </constraints>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PgR-nu-nWW">
+                                <rect key="frame" x="27.5" y="335" width="320" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="c6K-Wr-jTI"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9so-Z5-heY">
+                                <rect key="frame" x="122.5" y="64" width="130" height="24"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L49-tX-6mO">
+                                <rect key="frame" x="111.5" y="515" width="152" height="36"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <state key="normal" title="Go To Your Pick !"/>
+                                <connections>
+                                    <action selector="goButton:" destination="GEU-vO-Ssg" eventType="touchUpInside" id="Ejb-B1-3wP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egb-Ed-aw5">
+                                <rect key="frame" x="119.5" y="566" width="136" height="36"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <state key="normal" title="Explore More ?"/>
+                                <connections>
+                                    <segue destination="bUk-O4-feu" kind="show" id="dlX-7L-4XA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Offers For You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ms-fd-Wgm">
+                                <rect key="frame" x="96" y="286.5" width="183" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="egb-Ed-aw5" firstAttribute="top" secondItem="L49-tX-6mO" secondAttribute="bottom" constant="15" id="4RE-Va-Vq7"/>
+                            <constraint firstItem="PgR-nu-nWW" firstAttribute="centerX" secondItem="9pe-mP-Q7V" secondAttribute="centerX" id="6oP-EA-fE2"/>
+                            <constraint firstItem="W3K-c5-vMz" firstAttribute="trailing" secondItem="Ox3-gY-i4d" secondAttribute="trailing" constant="30" id="7n0-p3-vNp"/>
+                            <constraint firstItem="Ox3-gY-i4d" firstAttribute="top" secondItem="9so-Z5-heY" secondAttribute="bottom" constant="50" id="8Gk-tE-eOX"/>
+                            <constraint firstItem="09V-vX-Ar3" firstAttribute="top" secondItem="9so-Z5-heY" secondAttribute="bottom" constant="30" id="8td-Ix-7Vj"/>
+                            <constraint firstItem="9so-Z5-heY" firstAttribute="centerX" secondItem="9pe-mP-Q7V" secondAttribute="centerX" id="Dmq-eb-lyN"/>
+                            <constraint firstItem="L49-tX-6mO" firstAttribute="centerX" secondItem="9pe-mP-Q7V" secondAttribute="centerX" id="EZp-Gw-UvJ"/>
+                            <constraint firstItem="6Ms-fd-Wgm" firstAttribute="centerX" secondItem="9pe-mP-Q7V" secondAttribute="centerX" id="HGA-wb-BIo"/>
+                            <constraint firstItem="W3K-c5-vMz" firstAttribute="bottom" secondItem="egb-Ed-aw5" secondAttribute="bottom" constant="65" id="I7a-jZ-Sey"/>
+                            <constraint firstItem="L49-tX-6mO" firstAttribute="top" secondItem="PgR-nu-nWW" secondAttribute="bottom" constant="30" id="TGN-dJ-lc9"/>
+                            <constraint firstItem="9so-Z5-heY" firstAttribute="top" secondItem="W3K-c5-vMz" secondAttribute="top" constant="20" id="l9X-NN-JgX"/>
+                            <constraint firstItem="PgR-nu-nWW" firstAttribute="top" secondItem="6Ms-fd-Wgm" secondAttribute="bottom" constant="25" id="mCO-jA-Zrf"/>
+                            <constraint firstItem="09V-vX-Ar3" firstAttribute="leading" secondItem="W3K-c5-vMz" secondAttribute="leading" constant="30" id="vgk-cB-mxO"/>
+                            <constraint firstItem="egb-Ed-aw5" firstAttribute="centerX" secondItem="9pe-mP-Q7V" secondAttribute="centerX" id="wRV-OG-Bhk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W3K-c5-vMz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nZt-oN-waG"/>
+                    <connections>
+                        <outlet property="exploreMoreButton" destination="egb-Ed-aw5" id="Q4O-nV-9eK"/>
+                        <outlet property="goLinkButton" destination="L49-tX-6mO" id="hey-Lt-Aqh"/>
+                        <outlet property="picker" destination="PgR-nu-nWW" id="gfd-4F-FW8"/>
+                        <outlet property="productImage" destination="09V-vX-Ar3" id="X0h-CR-LaN"/>
+                        <outlet property="productName" destination="Ox3-gY-i4d" id="Igu-Xi-ZIR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KMQ-rE-44v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3456.8000000000002" y="-558.17091454272872"/>
+        </scene>
+        <!--Google Table View Controller-->
+        <scene sceneID="skQ-Iy-xnX">
+            <objects>
+                <tableViewController storyboardIdentifier="GoogleSearch" id="bUk-O4-feu" customClass="GoogleTableViewController" customModule="Capstone" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="MsT-SG-ApQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FsB-lc-slc">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="7if-4K-pxM">
+                            <rect key="frame" x="0.0" y="231" width="375" height="55"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pi-7p-Rlz">
+                                    <rect key="frame" x="132" y="9.5" width="111" height="36"/>
+                                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                    <state key="normal" title="LOAD MORE"/>
+                                    <connections>
+                                        <action selector="loadMore:" destination="bUk-O4-feu" eventType="touchUpInside" id="kUm-nb-Xtq"/>
+                                    </connections>
+                                </button>
+                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="DB9-5K-i6O">
+                                    <rect key="frame" x="263" y="17.5" width="20" height="20"/>
+                                </activityIndicatorView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="DB9-5K-i6O" firstAttribute="leading" secondItem="3pi-7p-Rlz" secondAttribute="trailing" constant="20" id="6mj-xI-NHu"/>
+                                <constraint firstItem="3pi-7p-Rlz" firstAttribute="centerY" secondItem="7if-4K-pxM" secondAttribute="centerY" id="Asj-JY-Nly"/>
+                                <constraint firstItem="DB9-5K-i6O" firstAttribute="centerY" secondItem="3pi-7p-Rlz" secondAttribute="centerY" id="Hlm-x8-pa1"/>
+                                <constraint firstItem="3pi-7p-Rlz" firstAttribute="centerX" secondItem="7if-4K-pxM" secondAttribute="centerX" id="SlM-ac-qUh"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="120" id="2yu-OM-obL" customClass="GoogleTableViewCell" customModule="Capstone" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="83" width="375" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2yu-OM-obL" id="YFW-ya-MXQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFs-t0-f3L">
+                                            <rect key="frame" x="110" y="87" width="245" height="17"/>
+                                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fwY-Tt-kwn">
+                                            <rect key="frame" x="15" y="16" width="80" height="88"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="797-Qj-cTb"/>
+                                                <constraint firstAttribute="width" constant="80" id="dSx-sr-cgj"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5S-QT-26G">
+                                            <rect key="frame" x="110" y="16" width="245" height="18.5"/>
+                                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="y5S-QT-26G" firstAttribute="leading" secondItem="fwY-Tt-kwn" secondAttribute="trailing" constant="15" id="0ye-BK-87n"/>
+                                        <constraint firstItem="dFs-t0-f3L" firstAttribute="bottom" secondItem="fwY-Tt-kwn" secondAttribute="bottom" id="8Rx-DQ-Cgk"/>
+                                        <constraint firstAttribute="trailing" secondItem="dFs-t0-f3L" secondAttribute="trailing" constant="20" symbolic="YES" id="FrO-4W-xxb"/>
+                                        <constraint firstItem="y5S-QT-26G" firstAttribute="top" secondItem="YFW-ya-MXQ" secondAttribute="topMargin" constant="5" id="RkO-M1-ghO"/>
+                                        <constraint firstItem="y5S-QT-26G" firstAttribute="trailing" secondItem="dFs-t0-f3L" secondAttribute="trailing" id="X7s-qK-SYU"/>
+                                        <constraint firstItem="fwY-Tt-kwn" firstAttribute="top" secondItem="y5S-QT-26G" secondAttribute="top" id="boJ-PU-OxP"/>
+                                        <constraint firstItem="y5S-QT-26G" firstAttribute="leading" secondItem="dFs-t0-f3L" secondAttribute="leading" id="hf1-XP-qj5"/>
+                                        <constraint firstItem="fwY-Tt-kwn" firstAttribute="centerY" secondItem="YFW-ya-MXQ" secondAttribute="centerY" id="phJ-xx-FTW"/>
+                                        <constraint firstItem="fwY-Tt-kwn" firstAttribute="leading" secondItem="YFW-ya-MXQ" secondAttribute="leading" constant="15" id="scC-4V-wTV"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cellImage" destination="fwY-Tt-kwn" id="0sf-o8-ORM"/>
+                                    <outlet property="cellLabel" destination="dFs-t0-f3L" id="liT-sR-zSz"/>
+                                    <outlet property="cellTitle" destination="y5S-QT-26G" id="3ex-46-RSy"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bUk-O4-feu" id="KdL-kt-B4I"/>
+                            <outlet property="delegate" destination="bUk-O4-feu" id="M2U-t3-IRp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="pGC-iG-6Xs"/>
+                    <connections>
+                        <outlet property="bottomView" destination="7if-4K-pxM" id="7Wq-Bs-vpp"/>
+                        <outlet property="loadAnimator" destination="DB9-5K-i6O" id="uQL-SY-G1N"/>
+                        <outlet property="loadMoreButton" destination="3pi-7p-Rlz" id="GJH-mu-cbB"/>
+                        <outlet property="message" destination="FsB-lc-slc" id="EC0-hV-KtP"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bf4-ab-252" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4623.1999999999998" y="-560.86956521739137"/>
+        </scene>
+        <!--Instructions View Controller-->
+        <scene sceneID="n8Z-By-rHi">
+            <objects>
+                <viewController storyboardIdentifier="Instructions" id="iJ3-rg-Elm" customClass="InstructionsViewController" customModule="Capstone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yN8-ey-0Ng">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="-- Step 1 -- Provide your photo  -- Step 2 -- Pick an offer  -- Step 3 -- Explore more from the Google Search" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1IU-uB-IYQ">
+                                <rect key="frame" x="62.5" y="172" width="250" height="250"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="OJp-vh-PM7"/>
+                                    <constraint firstAttribute="height" constant="250" id="PHV-JA-RMF"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How To Use It" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1N-lY-g6k">
+                                <rect key="frame" x="113" y="94" width="149.5" height="28"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="h1N-lY-g6k" firstAttribute="centerX" secondItem="yN8-ey-0Ng" secondAttribute="centerX" id="EFh-Q3-vkG"/>
+                            <constraint firstItem="h1N-lY-g6k" firstAttribute="top" secondItem="FXH-x6-iXJ" secondAttribute="top" constant="50" id="P2P-R4-x8n"/>
+                            <constraint firstItem="1IU-uB-IYQ" firstAttribute="centerX" secondItem="FXH-x6-iXJ" secondAttribute="centerX" id="PbU-sy-q3l"/>
+                            <constraint firstItem="1IU-uB-IYQ" firstAttribute="top" secondItem="h1N-lY-g6k" secondAttribute="bottom" constant="50" id="rDs-Db-1ak"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FXH-x6-iXJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ifv-9h-RcT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3uT-0i-45O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2340" y="323.38830584707648"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xtr-3r-lQD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KIi-GS-JTr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Cu-2n-1xb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.052330933439999998" green="0.37598593559999999" blue="0.32546371590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sYM-3n-Oki"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="24F-Mg-5f8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="301.60000000000002" y="-118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="shoppingbag" width="5180" height="4000"/>
+    </resources>
+    <color key="tintColor" red="0.052330933439999998" green="0.37598593559999999" blue="0.32546371590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+</document>
